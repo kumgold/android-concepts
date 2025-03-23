@@ -1,5 +1,7 @@
 # Android Hilt Under the hood
 
+https://www.youtube.com/watch?v=VOvwAKTRJk8
+
 ## Overview
 Hilt는 코드를 생성하기 위해 Annotation processor를 사용한다. 소스 파일을 자바 바이트 코드로 변환할 때 컴파일러 안에서 Annotation processing이 이루어진다. Annotation processor는 소스 파일 내의 주석에 트리거된다. 일반적으로 Annotation processor는 주석과 유형을 검사하여 검증 또는 새로운 소스 코드 생성과 같은 작업을 수행한다.
 
