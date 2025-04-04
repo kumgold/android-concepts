@@ -1,4 +1,4 @@
-# Understanding Android Compose
+# Understanding Android Compose 1
 
 ## Overview
 새로운 안드로이드 UI Toolkit Jetpack Compose에 대해서 이해를 돕고자 한다. 이 글은 Compose 디자인 방식의 이유와 Compose에서 작성되는 코드들, API 형성과 같은 이야기를 다루는 게시글을 번역한 글이다.
