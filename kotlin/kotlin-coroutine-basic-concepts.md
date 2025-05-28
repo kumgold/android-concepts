@@ -14,10 +14,13 @@
 <img src="/images/kotlin-coroutine-basic-concepts1.gif" alt=""><br>
 출처 : 나무위키
 
+<br><br>
 
 스레드는 한 번에 하나의 일을 처리할 수 있다. 메인 스레드는 View 업데이트에 사용되어야 한다. 만약 View 업데이트가 아닌 다른 작업이 많아지거나 오래 걸린다면 메인스레드가 View 업데이트를 하지 못하게 된다.
 결과적으로 View 업데이트에 딜레이가 생기고 사용자가 느꼈을때 앱이 끊기는 것처럼 보일 수 있게 된다.
 <img src="/images/kotlin-coroutine-basic-concepts2.png" alt=""><br>
+
+<br><br>
 
 그렇기 때문에 안드로이드의 메인 스레드가 과부화되지 않도록 복잡한 작업은 다른 Worker Thread에서 진행하도록 구현하는 것이 필요하다. 
 그렇기 때문에 네트워크 요청이나 데이터베이스 접근 같은 로직은 메인 스레드가 아닌 Worker Thread에서 작동하는 것이 권장된다.
@@ -27,6 +30,8 @@
 
 <img src="/images/kotlin-coroutine-basic-concepts3.png" alt=""><br>
 출처 : 안드로이드 공식 문서
+
+<br><br>
 
 ## Coroutine을 사용하는 이유
 
