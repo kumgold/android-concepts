@@ -91,19 +91,20 @@ suspend fun postItem(item: Item) {
 (실제로는 Kotlin으로 작성되어 있지 않다.)
 ```
 fun postItem(item: Item, cont: Continuation) {
+    // 실행 순서 1 
     val stateMachine = object :  CoroutineImpl(cont) { 
         fun resumeWith(...) {
-            postItem(null, this)
+            postItem(null, this) // // 실행 순서 3
         } 
     }
     
     when (stateMachine.label) {
-        0 -> {
+        0 -> { // // 실행 순서 2
             stateMachine.item = item
             stateMachine.label += 1
             requestToken(stateMachine)
         }
-        1 -> {
+        1 -> { // 실행 순서 4
             val item = stateMachine.item
             val token = stateMachine.result
             stateMachine.label += 1
