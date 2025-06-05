@@ -31,7 +31,7 @@
 그렇기 때문에 메인 스레드가 멈추지 않도록 복잡한 작업은 다른 Worker Thread에서 진행하도록 구현하는 것이 필요하다.
 흔히 네트워크 요청이나 데이터베이스 접근 같은 로직은 메인 스레드가 아닌 Worker Thread에서 작동하는 것이 권장된다.
 
-<br>
+<br><br>
 
 ## What is Coroutine?
 Coroutine은 일시 중단이 가능한 계산 인스턴스이다. 일시 중단이 가능하다는 말은 진행중인 **작업A**를 잠시 멈추고 다른 **작업B**를 작업한 후 다시 **작업A**를 수행할 수 있다는 뜻이다.
@@ -71,6 +71,8 @@ fun main() = runBlocking { // CoroutineScope
     launch { doWorld() } // 하위 코루틴
 }
 ```
+
+<br><br>
 
 ## CPS(Continuation Passing Style)
 Suspend 키워드가 붙어 있는 함수는 코틀린 컴파일러에 의해서 함수 내부에 마지막 파라미터로 Continuation이 추가된다.
@@ -124,6 +126,8 @@ suspend 함수가 중단되었을때 실행 정보는 Continuation 객체에 저
 
 resumeWith를 통해 재실행되었을때 label 값에 따라 다음 suspend 함수가 실행된다.
 실행 정보는 Continuation에 저장되어 있기 때문에 처음부터 재실행 하는 것이 아닌 중단된 시점부터 코드를 실행하는 것이 가능하다.
+
+<br><br>
 
 <hr>
 참고 자료 : <br>

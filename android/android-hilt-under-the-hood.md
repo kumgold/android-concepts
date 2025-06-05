@@ -9,6 +9,8 @@ Hilt는 코드를 생성하기 위해 Annotation processor를 사용한다. 소�
 
 Hilt에는 세 가지 주요 Annotation이 있다. @AndroidEntryPoint, @InstallIn, @HiltAndroidApp
 
+<br><br>
+
 ## @AndroidEntryPoint
 ```
 @AndroidEntryPoint
@@ -54,6 +56,8 @@ interface PlayActivity_Injector {
 }
 ```
 
+<br><br>
+
 ## @InstallIn
 ```
 @Module
@@ -70,6 +74,8 @@ package hilt_metadata
 class MusicDatabaseModule_Metadata {}
 ```
 
+<br><br>
+
 ## @HiltAndroidApp
 ```
 @HiltAndroidApp
@@ -85,5 +91,6 @@ Hilt Annotation processor가 HiltAndroidApp 주석을 만나면 ‘HiltComponent
 Components를 구성하기 위해서 Hilt는 메타데이터 패키지 안에 모든 InstallIn 주석이 달린 클래스를 찾는다. InstallIn 주석이 달린 모듈은 해당 Components 선언의 모듈 목록에 배치된다. 
 
 <br><br>
+<hr>
 참고 자료 : <br>
 https://medium.com/androiddevelopers/mad-skills-series-hilt-under-the-hood-9d89ee227059

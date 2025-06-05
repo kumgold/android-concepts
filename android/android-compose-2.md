@@ -5,10 +5,11 @@
 ## Overview
 앞서 Compose가 생긴 이유와 Compose와 상속, Recomposition 같은 개념에 대해서 작성했다.
 
+<br><br>
+
 ## What is @Composable
 먼저 Compose를 사용할 때 Annotation processor는 필요하지 않다. Compose는 Kotlin의 유형 검사 및 코드 생성 단계에서 코틀린 컴파일러 플러그인의 도움을 받아 동작한다. @Composable을 보면 분명 어노테이션이 붙어 있기 때문에 잘 이해가 되지 않지만, Composable annotation은 annotation보다는 키워드에 더 가깝다고 한다. (예 : suspend keyword)
 
-<br>
 
 suspend keyword가 붙은 함수를 보면, 다양한 방식으로 선언할 수 있다.
 ```
@@ -59,6 +60,8 @@ fun Example(a: () -> Unit, b: @Composable () -> Unit) {
 ```
 
 @Composable 함수가 이렇게 동작하는 이유는 @Composable 함수를 처리하는 Calling Context Object라고 부르는 특정 Thread가 필요하기 때문이다.
+
+<br><br>
 
 ## 실행 모델
 Compose의 실행 모델은 Composer라고 부르는데, Composer의 구현은 Gap Buffer와 같은 데이터 구조가 포함되어 있다.

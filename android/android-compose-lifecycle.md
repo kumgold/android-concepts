@@ -8,6 +8,8 @@ Compose의 Lifecycle은 Activity, Fragment와 다르게 매우 간단하다.
 
 <img src="/images/android-compose-lifecycle1.png">
 
+<br><br>
+
 ## Compose phase
 Composable 함수는 세 가지 단계를 거쳐 렌더링된다.
 - **Composition(What to show)** : 표시할 UI이다. Compose는 Composable 함수를 실행하고 UI Description을 만든다.
@@ -40,7 +42,8 @@ Tree는 위에서 아래로 전위 순회하며 차례대로 Composable 함수�
 
 <img src="/images/android-compose-lifecycle5.gif">
 
-<br>
+<br><br>
+<hr>
 참고 자료 : <br>
 https://medium.com/androiddevelopers/compose-phases-7fe6630ea037 <br>
 https://developer.android.com/develop/ui/compose/lifecycle?hl=ko <br>
