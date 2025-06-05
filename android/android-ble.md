@@ -11,6 +11,7 @@
 8. 성공적으로 연결되었다면, BluetoothGatt 객체의 Service를 가져옵니다.
 9. BluetoothGatt의 Service 객체를 통해서 특정 UUID의 Characteristic 정보를 얻을 수 있고 Characteristic 정보를 통해서 BLE 기기의 값을 읽고 쓸 수 있습니다.
 
+<br><br>
 
 ## Bluetooth GATT란 무엇인가요?
 BLE 연결을 통해서 프로필 및 데이터를 주고 받기 위한 방법을 정의한 방법론이다. GATT는 실제 데이터 전송 절차 및 데이터 형식만을 다룬다. 올바르게 작동하려면 모든 표준 BLE Profile은 GATT를 기반으로 해야 하고 준수해야 한다.
@@ -25,6 +26,8 @@ GATT는 계층적으로 구성되어 있다. Service는 일반적으로 장치�
 - GATT라는 계층적으로 구성되어 있는 데이터 Entity를 통해서 모든 BLE 기기 관련 데이터셋을 표준화 할 수 있다. (개발자는 기기마다 다른 데이터셋을 고민하지 않고 오직 GATT를 기반으로 통신을 구현한다.)
 - 계층적으로 구성되어 있다.
 - 특정 Entity의 Key를 읽고 데이터를 0 -> 1 로 변경하는 등의 작업을 통해 BLE 기기에 데이터를 변경할 수 있다.
+
+<br><br>
 
 ## BLE와 Bluetooth Classic의 차이점
 
