@@ -11,7 +11,7 @@ Activity, Fragment, Service 등 앱 구성요소의 수명 주기를 인식할 �
 비동기식으로 계산할 수 있는 데이터 스트림이다. 여러 값을 순차적으로 내보낼 수 있으며, 비동기적으로 생성하고 사용한다.
 기본적으로 스레드에 안전하게 설계되어 있으며, Android가 아닌 Kotlin Library이다.
 
-<Br>
+<br>
 
 ## 비교
 | 항목      | LiveData                        | Flow                                   |
