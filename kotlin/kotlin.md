@@ -1,5 +1,5 @@
 # Kotlin
 
 ## Concepts
-[Kotlin object keyword](./kotlin/kotlin-object.md)<br>
-[Kotlin Coroutine Basic Concepts](./kotlin/kotlin-coroutine-basic-concepts.md)<br>
+[Kotlin object keyword](./kotlin-object.md)<br>
+[Kotlin Coroutine Basic Concepts](./kotlin-coroutine-basic-concepts.md)<br>
