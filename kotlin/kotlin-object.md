@@ -3,7 +3,10 @@
 ## Overview
 object 키워드는 다양한 상황에서 사용되는데, 별도의 생성자 호출 없이 단 하나의 인스턴스만 생성할 수 있고, 이 인스턴스를 통해 멤버에 접근할 수 있다.
 
-<br><br>
+- Object declaration (객체 선언) : 싱글톤 객체 생성
+- Object expression (객체 표현식) : 익명 클래스 객체 생성
+- Companion object : 클래스 안에 싱글톤 객체 생성
+- Data object : 디버깅이 용이한 object
 
 ## Object Declaration (객체 선언)
 - 싱글톤 패턴을 구현하는 방법이다.
