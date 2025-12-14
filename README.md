@@ -10,9 +10,10 @@
 [Android Compose 2](./android/android-compose-2.md) <br>
 
 ## [Kotlin](./kotlin/kotlin.md)<br>
-[Generics](./kotlin/kotlin-generics.md) <br>
 [Object keyword](./kotlin/kotlin-object.md) <br>
 [Coroutine Basic](./kotlin/kotlin-coroutine-basic-concepts.md) <br>
+[Generics](./kotlin/kotlin-generics.md) <br>
+[Interface](./kotlin/kotlin-interface.md)<br>
 
 ## [OpenGL](./opengl/opengl.md)<br>
 [What is OpenGL](./opengl/opengl-intro.md)<br>

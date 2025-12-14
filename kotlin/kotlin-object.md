@@ -92,3 +92,6 @@ fun main() {
 ### data class, data object의 차이점
 - data object는 copy() 함수가 없다. 싱글톤이기 때문에 필요 없기 때문이다.
 - componentN() 함수가 없다. data object는 이런 속성을 갖고 있지 않기 때문이다.
+
+참고자료 :
+https://kotlinlang.org/docs/object-declarations.html
