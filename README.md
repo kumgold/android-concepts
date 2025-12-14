@@ -14,6 +14,7 @@
 [Coroutine Basic](./kotlin/kotlin-coroutine-basic-concepts.md) <br>
 [Generics](./kotlin/kotlin-generics.md) <br>
 [Interface](./kotlin/kotlin-interface.md)<br>
+[Sealed class & Sealed interface](./kotlin/kotlin-sealed-class-interface.md)<br>
 
 ## [OpenGL](./opengl/opengl.md)<br>
 [What is OpenGL](./opengl/opengl-intro.md)<br>
