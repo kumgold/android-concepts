@@ -10,11 +10,12 @@
 [Android Compose 2](./android/android-compose-2.md) <br>
 
 ## [Kotlin](./kotlin/kotlin.md)<br>
-[Object keyword](./kotlin/kotlin-object.md) <br>
-[Coroutine Basic](./kotlin/kotlin-coroutine-basic-concepts.md) <br>
-[Generics](./kotlin/kotlin-generics.md) <br>
-[Interface](./kotlin/kotlin-interface.md)<br>
-[Sealed class & Sealed interface](./kotlin/kotlin-sealed-class-interface.md)<br>
+[Object keyword](./kotlin/object.md) <br>
+[Coroutine Basic](./kotlin/coroutine-basic-concepts.md) <br>
+[Generics](./kotlin/generics.md) <br>
+[Interface](./kotlin/interface.md)<br>
+[Sealed class & Sealed interface](./kotlin/sealed-class-interface.md)<br>
+[Abstract class](./kotlin/abstract-class.md)<br>
 
 ## [OpenGL](./opengl/opengl.md)<br>
 [What is OpenGL](./opengl/opengl-intro.md)<br>
