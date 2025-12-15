@@ -58,7 +58,7 @@ fun main() {
 
 ### 반공변성 (Contravariance, in) - "쓰기 전용"
 상황: Cat은 Animal입니다. <br>
-그렇다면, Comparator\<Animal>(동물 비교기)은 Comparator\<Cat>(고양이 비교기)을 대신할 수 있을까요? <br>
+그렇다면, Comparator\<Animal>은 Comparator\<Cat>을 대신할 수 있을까요? <br>
 - 반공변성 (in): YES. 상속 관계가 뒤집혀서 Comparator\<Animal>이 Comparator\<Cat>의 자식(하위 타입)처럼 동작합니다.
 
 왜 역전될까요? <br>
@@ -71,10 +71,9 @@ fun main() {
 - 쓰기 (입력): 비교기(Comparator\<Animal>)에게 Cat 두 마리를 던져줍니다(in). Animal을 비교할 줄 아는 놈이니까 Cat 비교는 식은 죽 먹기입니다. 안전합니다. (OK)
 - 읽기 (반환): 비교기가 내부적으로 가지고 있는 T를 꺼낸다고 칩시다. Comparator\<Cat> 타입 변수라면 Cat이 나오길 기대하겠죠? 하지만 실제 객체는 Comparator\<Animal>이라서 Dog나 Bird를 가지고 있을 수도 있습니다. 위험합니다. (Fail)
 -> 그래서 in을 붙이면 컴파일러가 "읽기(반환) 금지!"를 때려버립니다.
+
+
 코드 예제: 쓰레기통 (소비자)
-
-
-
 ```kotlin
 open class Trash
 
@@ -100,16 +99,16 @@ fun main() {
 ```
 
 ## 요약: 면접용 멘트
-- 공변성(out)은 List\<String>이 List\<Any>가 될 수 있게 해주는 것입니다. 데이터를 꺼내는(Produce) 것만 허용함으로써 타입 안정성을 보장합니다.
-- 반공변성(in)은 Comparable\<Number>가 Comparable\<Int>를 대신할 수 있게 해주는 것입니다. 상위 타입 처리기가 하위 타입 처리기를 대체할 수 있다는 논리이며, 데이터를 넣는(Consume) 것만 허용합니다.
+- 공변성(out)은 List\<String>이 List\<Any>가 될 수 있게 해주는 것입니다. 데이터를 꺼내는 것만 허용함으로써 타입 안정성을 보장합니다.
+- 반공변성(in)은 Comparable\<Number>가 Comparable\<Int>를 대신할 수 있게 해주는 것입니다. 상위 타입 처리기가 하위 타입 처리기를 대체할 수 있다는 논리이며, 데이터를 넣는 것만 허용합니다.
 - 이 둘을 적절히 사용하면 라이브러리 설계 시 훨씬 유연하고 재사용 가능한 API를 만들 수 있습니다.
 
 ### Q. reified 키워드는 무엇이며, 언제 사용하나요?
 
-이 질문은 제네릭의 한계(Type Erasure)와 코틀린만의 해결책을 묻는 킬러 문항입니다.  
-- 타입 소거(Type Erasure) 문제를 해결하기 위해 사용합니다.
+이 질문은 제네릭의 한계와 코틀린만의 해결책을 묻는 킬러 문항입니다.  
+- 타입 소거 문제를 해결하기 위해 사용합니다.
 - JVM 제네릭은 런타임에 타입 정보가 지워집니다. 그래서 일반적인 제네릭 함수에서는 T::class.java처럼 타입 클래스에 접근하거나 is T 같은 타입 검사를 할 수 없습니다.
-- 함수를 **inline**으로 선언하고 제네릭 타입 앞에 reified 키워드를 붙이면, 컴파일러가 함수의 바이트코드를 호출 지점에 복사해 넣으면서 실제 타입 정보도 함께 넣어줍니다. 이를 통해 런타임에도 제네릭 타입을 실체화된(Reified) 타입처럼 다룰 수 있게 됩니다.
+- 함수를 inline으로 선언하고 제네릭 타입 앞에 reified 키워드를 붙이면, 컴파일러가 함수의 바이트코드를 호출 지점에 복사해 넣으면서 실제 타입 정보도 함께 넣어줍니다. 이를 통해 런타임에도 제네릭 타입을 실체화된(Reified) 타입처럼 다룰 수 있게 됩니다.
 
  
 실무 예시: Gson이나 Retrofit을 사용할 때 fromJson<User>(jsonString) 처럼 클래스 타입을 파라미터로 넘기지 않고 직관적으로 사용할 때 주로 활용합니다.
@@ -120,11 +119,11 @@ inline fun <reified T> String.toObject(): T {
 }
 ```
 
-### Q. 제네릭 제약(Generic Constraints)은 어떻게 거나요? (where)
-- 기본적으로 제네릭 T는 Any?로 간주되지만, 콜론(:)을 사용해 상한(Upper Bound)을 지정할 수 있습니다.
+### Q. 제네릭 제약은 어떻게 거나요?
+- 기본적으로 제네릭 T는 Any?로 간주되지만, 콜론(:)을 사용해 상한을 지정할 수 있습니다.
 - 예를 들어 \<T : Number>라고 하면 Number와 그 자식들만 들어올 수 있습니다.
 - 만약 두 개 이상의 제약 조건이 필요하다면 where 키워드를 사용합니다. 예를 들어 \<T> ... where T : CharSequence, T : Comparable\<T>와 같이 작성하면, 문자열이면서 비교 가능한 타입만 허용할 수 있습니다.
 
-### 면접관에게 어필할 수 있는 한 문장 (Insight)
-안드로이드 개발에서 제네릭은 단순히 유틸 함수를 만들 때뿐만 아니라, BaseActivity\<VB : ViewBinding>이나 BaseViewModel 같이 보일러플레이트 코드를 줄이는 기반 클래스(Base Class)를 설계할 때 핵심적인 역할을 한다고 생각합니다.
+### 면접관에게 어필할 수 있는 한 문장
+안드로이드 개발에서 제네릭은 단순히 유틸 함수를 만들 때뿐만 아니라, BaseActivity\<VB : ViewBinding>이나 BaseViewModel 같이 보일러플레이트 코드를 줄이는 기반 클래스를 설계할 때 핵심적인 역할을 한다고 생각합니다.
 특히 reified와 inline 함수를 적절히 활용하면 API 호출이나 JSON 파싱 코드를 훨씬 안전하고 간결하게 만들 수 있습니다.
