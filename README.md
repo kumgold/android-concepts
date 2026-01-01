@@ -1,21 +1,30 @@
 # Android Interview Questions
 
 ## [Android](./android/android.md)<br>
+
+### Concept
 [Android BLE](./android/android-ble.md) <br>
-[Android Flow vs LiveData](./android/android-flow-livedata.md) <br>
-[Android XML vs Compose](./android/android-xml-compose.md) <br>
 [Android Design patterns](./android/android-design-patterns.md) <br>
 [Android Hilt](./android/android-hilt-under-the-hood.md) <br>
 [Android Compose 1](./android/android-compose-1.md) <br>
 [Android Compose 2](./android/android-compose-2.md) <br>
 
+### Conceptual comparison
+[Android Flow vs LiveData](./android/android-flow-livedata.md) <br>
+[Android XML vs Compose](./android/android-xml-compose.md) <br>
+
 ## [Kotlin](./kotlin/kotlin.md)<br>
+
+### keyword
 [Object keyword](./kotlin/object.md) <br>
-[Coroutine Basic](./kotlin/coroutine-basic-concepts.md) <br>
 [Generics](./kotlin/generics.md) <br>
 [Interface](./kotlin/interface.md)<br>
 [Sealed class & Sealed interface](./kotlin/sealed-class-interface.md)<br>
 [Abstract class](./kotlin/abstract-class.md)<br>
+[Scope function](./kotlin/scope-functions.md)<br>
+
+### Coroutine
+[Coroutine Basic](./kotlin/coroutine-basic-concepts.md) <br>
 [Flow Basic](./kotlin/flow-1.md)<br>
 
 ## [OpenGL](./opengl/opengl.md)<br>
