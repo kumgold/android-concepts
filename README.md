@@ -15,7 +15,7 @@
 
 ## [Kotlin](./kotlin/kotlin.md)<br>
 
-### keyword
+### Keyword
 [Object keyword](./kotlin/object.md) <br>
 [Generics](./kotlin/generics.md) <br>
 [Interface](./kotlin/interface.md)<br>
@@ -29,7 +29,3 @@
 
 ## [OpenGL](./opengl/opengl.md)<br>
 [What is OpenGL](./opengl/opengl-intro.md)<br>
-
-## [Owasp](./owasp/OWASP.md)<br>
-[M1 Improper Credential Usage](./owasp/m1-improper-credential-usage.md) <br>
-[M2 Inadequate Supply chain security](./owasp/m2-inadequate-supply-chain_security.md) <br>
