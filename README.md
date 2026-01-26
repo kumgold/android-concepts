@@ -1,31 +1,47 @@
-# Android Interview Questions
+![alt text](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![alt text](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![alt text](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)
 
-## [Android](./android/android.md)<br>
+# 📱 Android Interview Questions
 
-### Concept
-[Android BLE](./android/android-ble.md) <br>
-[Android Design patterns](./android/android-design-patterns.md) <br>
-[Android Hilt](./android/android-hilt-under-the-hood.md) <br>
-[Android Compose 1](./android/android-compose-1.md) <br>
-[Android Compose 2](./android/android-compose-2.md) <br>
+개발자 면접 대비를 위한 안드로이드 및 코틀린 핵심 개념 정리 저장소입니다.
 
-### Conceptual comparison
-[Android Flow vs LiveData](./android/android-flow-livedata.md) <br>
-[Android XML vs Compose](./android/android-xml-compose.md) <br>
+---
 
-## [Kotlin](./kotlin/kotlin.md)<br>
+## 🤖 Android
+> 안드로이드 프레임워크와 아키텍처 핵심 정리
 
-### Keyword
-[Object keyword](./kotlin/object.md) <br>
-[Generics](./kotlin/generics.md) <br>
-[Interface](./kotlin/interface.md)<br>
-[Sealed class & Sealed interface](./kotlin/sealed-class-interface.md)<br>
-[Abstract class](./kotlin/abstract-class.md)<br>
-[Scope function](./kotlin/scope-functions.md)<br>
+### 🧱 Core Fundamentals
+- [ ] BLE (Bluetooth Low Energy) : [상세보기](./android/android-ble.md)
+- [ ] Design Patterns : [상세보기](./android/android-design-patterns.md)
+- [ ] Hilt (Dependency Injection) : Under the hood [상세보기](./android/android-hilt_under-the-hood.md)
 
-### Coroutine
-[Coroutine Basic](./kotlin/coroutine-basic-concepts.md) <br>
-[Flow Basic](./kotlin/flow-1.md)<br>
+- ### 🎨 Modern UI (Jetpack Compose)
+- [ ] Compose Series 01 : 기초 및 핵심 개념 [상세보기](./android/android-compose-1.md)
+- [ ] Compose Series 02 : 상태 관리 및 심화 [상세보기](./android/android-compose-2.md)
 
-## [OpenGL](./opengl/opengl.md)<br>
-[What is OpenGL](./opengl/opengl-intro.md)<br>
+### ⚖️ Critical Comparison
+- [ ] Reactive Stream : Flow vs LiveData 비교 분석 [상세보기](./android/android-flow-livedata.md)
+- [ ] Layout System : XML vs Compose 패러다임 비교 [상세보기](./android/android-xml-compose.md)
+
+----
+
+## 💜 Kotlin
+> 현대적인 코틀린 문법과 코루틴 심화
+
+### 🔑 Keywords
+- [x] `Object` 키워드 [상세보기](./kotlin/object.md)
+- [x] `Generics` 개념 [상세보기](./kotlin/generics.md)
+- [x] `Interface` 활용 [상세보기](./kotlin/interface.md)
+- [x] `Sealed class & Interface` [상세보기](./kotlin/sealed-class-interface.md)
+- [x] `Abstract class` [상세보기](./kotlin/abstract-class.md)
+- [x] `Scope function` [상세보기](./kotlin/scope-functions.md)
+
+### 🚀 Asynchronous (Coroutine)
+- [Coroutine Basic](./kotlin/coroutine-basic-concepts.md)
+- [Flow Basic](./kotlin/flow-1.md)
+
+----
+
+## 🎨 Graphics
+- [🔍 What is OpenGL](./opengl/opengl-intro.md)
