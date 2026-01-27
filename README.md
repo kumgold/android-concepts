@@ -19,6 +19,7 @@
 ### 🎨 Modern UI (Jetpack Compose)
 - [ ] Compose Series 01 : 기초 및 핵심 개념 [상세보기](./android/android-compose-1.md)
 - [ ] Compose Series 02 : 상태 관리 및 심화 [상세보기](./android/android-compose-2.md)
+- [ ] Compose Stability [상세보기](./android/compose-stability.md)
 
 ### ⚖️ Critical Comparison
 - [ ] Reactive Stream : Flow vs LiveData 비교 분석 [상세보기](./android/android-flow-livedata.md)
