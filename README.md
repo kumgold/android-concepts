@@ -46,3 +46,11 @@
 
 ## 🎨 Graphics
 - [🔍 What is OpenGL](./opengl/opengl-intro.md)
+
+## 라이선스 (License)
+
+이 프로젝트의 대부분은 **Apache License 2.0**을 따릅니다.
+
+단, `[opengl]` 디렉토리는 원저작자(Joey de Vries)의 라이선스를 따릅니다.
+해당 콘텐츠는 상업적 이용이 제한되며, 원본의 저작권은 원저작자에게 있습니다.
+원본 출처: [LearnOpenGL.com](https://learnopengl.com/)
