@@ -37,6 +37,7 @@
 - [x] `Sealed class & Interface` [상세보기](./kotlin/sealed-class-interface.md)
 - [x] `Abstract class` [상세보기](./kotlin/abstract-class.md)
 - [x] `Scope function` [상세보기](./kotlin/scope-functions.md)
+- [x] `Inline` [상세보기](./kotlin/inline.md)
 
 ### 🚀 Asynchronous
 - [Coroutine Basic](./kotlin/coroutine-basic-concepts.md)

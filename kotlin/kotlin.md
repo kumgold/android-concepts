@@ -7,6 +7,7 @@
 [Sealed class & Sealed interface](./sealed-class-interface.md)<br>
 [Abstract class](./abstract-class.md)<br>
 [Scope function](./scope-functions.md)<br>
+[Inline keyword](./inline.md)<br>
 
 ## Coroutine
 [Coroutine Basic Concepts](./coroutine-basic-concepts.md)<br>
