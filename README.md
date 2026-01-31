@@ -22,6 +22,7 @@
 - [ ] Compose Stability [상세보기](./android/compose-stability.md)
 - [ ] Compose SideEffect [상세보기](./android/compose-sideeffect.md)
 - [ ] Compose Tree - 1 [상세보기](./android/compose-tree-1.md)
+- [ ] Compose Tree - 2 [상세보기](./android/compose-tree-2.md)
 
 ### ⚖️ Critical Comparison
 - [ ] Reactive Stream : Flow vs LiveData 비교 분석 [상세보기](./android/android-flow-livedata.md)
