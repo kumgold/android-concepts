@@ -2,9 +2,9 @@
 ![alt text](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![alt text](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)
 
-# 📱 Android Interview Questions
+# 📱 Android Concepts
 
-개발자 면접 대비를 위한 안드로이드 및 코틀린 핵심 개념 정리 저장소입니다.
+Repository for Android Understanding
 
 ---
 
